@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create User</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="user-create-form" action="./api/user" method="post">
         
         <!-- Add user input fields here -->
+        <p>Email: <input type="text" name="email" class="input-field" id="email"></p>
+        <p>Username: <input type="text" name="username" class="input-field" id="username"></p>
+        <p>First Name: <input type="text" name="firstName" class="input-field" id="first"></p>
+        <p>Last Name: <input type="text" name="lastName" class="input-field" id="last"></p>
 
-        <button type="submit">Create User</button>
+        <button type="submit" class="button">Create User</button>
     </form>
+
+    <script src="index.js"></script>
 </body>
 </html>
